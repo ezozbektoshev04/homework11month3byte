@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    top: 81px;
+    z-index: 9;
+    left: -100%;
+    right: 0;
+    background-color: #1c1e53;
+    padding-bottom: 20px;
+    transition: all 0.6s;
+  }
+
+  .open {
+    left: 0;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
+.contact {
+  max-width: 1061px;
+  margin: 0 auto;
+  padding: 56px 77px;
+}
